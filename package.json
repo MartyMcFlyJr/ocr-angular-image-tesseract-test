@@ -1,10 +1,11 @@
 {
-  "name": "kleine-zeitung-kundennummer",
-  "version": "0.0.0",
+  "name": "ocr-angular-image-tesseract-test",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build:prod": "node --max_old_space_size=4096 ./node_modules/.bin/ng build --configuration production --output-hashing all --vendor-chunk false --named-chunks false --aot=true --build-optimizer",
+    "build:test": "ng build --output-hashing all",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -19,6 +20,7 @@
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
     "rxjs": "~7.4.0",
+    "tesseract.js": "^2.1.5",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
@@ -27,7 +29,7 @@
     "@angular/cli": "~13.1.2",
     "@angular/compiler-cli": "~13.1.0",
     "@types/jasmine": "~3.10.0",
-    "@types/node": "^12.11.1",
+    "@types/node": "^12.20.41",
     "jasmine-core": "~3.10.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
