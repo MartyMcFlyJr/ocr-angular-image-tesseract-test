@@ -16,8 +16,8 @@ export class AppComponent {
   isLoading = false;
   language = 'eng';
   languageSwitch: ILanguageSwitch[] = [
-    {name: 'English: ', value: 'eng'},
-    {name: 'Deutsch: ', value: 'deu'}
+    {name: 'English', value: 'eng'},
+    {name: 'Deutsch', value: 'deu'}
   ]
 
   async addedFile(event: Event) {
