@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "kleine-zeitung-kundennummer": {
+    "ocr-angular-image-tesseract-test": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/kleine-zeitung-kundennummer",
+            "outputPath": "dist/ocr-angular-image-tesseract-test",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "kleine-zeitung-kundennummer:build:production"
+              "browserTarget": "ocr-angular-image-tesseract-test:build:production"
             },
             "development": {
-              "browserTarget": "kleine-zeitung-kundennummer:build:development"
+              "browserTarget": "ocr-angular-image-tesseract-test:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "kleine-zeitung-kundennummer:build"
+            "browserTarget": "ocr-angular-image-tesseract-test:build"
           }
         },
         "test": {
@@ -105,5 +105,5 @@
       }
     }
   },
-  "defaultProject": "kleine-zeitung-kundennummer"
+  "defaultProject": "ocr-angular-image-tesseract-test"
 }
